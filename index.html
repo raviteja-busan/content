@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <ion-icon name="fast-food-outline"></ion-icon><ion-icon name="pizza-outline"></ion-icon><ion-icon name="airplane-outline"></ion-icon>
+    <center><h1>Detail Tag and  Clickble content </h1></center>
+    <details>
+        <summary>Images</summary>
+            <a href="https://youtu.be/Cs8ckjug2o4?si=Uk9L8UVAZjLqLM9n" target="_blank"><img title="Cappuccino Tutorial" class="img2" src="data:image/jpeg;base64,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" style="width: 360px;"></a>
+            <p><strong>Note :</strong>Click in image for recipe</p>
+    </details>
+    <details>
+        <summary>Tables</summary>
+        <center><table>
+            <tr>
+                <th colspan="7">Points Table</th>
+            </tr>
+            <tr>
+                <th>#</th>
+                
+                <th > Teams</th>
+                <th>PND</th>
+                <th>WON</th>
+                <th>LOST</th>
+                <th>NET RR</th>
+                <th >PTS</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th><a href="https://en.wikipedia.org/wiki/Kolkata_Knight_Riders" target="_blank"><img title="Kolkata_Knight_Riders" src="https://ih1.redbubble.net/image.1779469725.7015/st,small,507x507-pad,600x600,f8f8f8.u1.jpg" alt="" height="25" width="25"></a> KKR </th>
+                <th>14</th>
+                <th>9</th>
+                <th>3</th>
+                <th>2</th>
+                <th bgcolor="red">20</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th><a href="https://en.wikipedia.org/wiki/Sunrisers_Hyderabad" target="_blank"><img title="Sunrisers_Hyderabad" src="https://upload.wikimedia.org/wikipedia/en/e/eb/Sunrisers_Hyderabad.png" alt="" height="25" width="25"></a>SRH</th>
+                <th>14</th>
+                <th>8</th>
+                <th>5</th>
+                <th>1</th>
+                <th bgcolor="red">17</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th><a href="https://en.wikipedia.org/wiki/Rajasthan_Royals" target="_blank"><img title="Rajasthan_Royals" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gE4M4Jk1t5XcPrKJUnrGEKykUCfqumZBoA&s" alt="" height="25" width="25"></a>RR</th>
+                <th>14</th>
+                <th>8</th>
+                <th>5</th>
+                <th>1</th>
+                <th bgcolor="red">17</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th><a href="https://en.wikipedia.org/wiki/Royal_Challengers_Bangalore" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Royal_Challengers_Bengaluru_Logo.png/240px-Royal_Challengers_Bengaluru_Logo.png" alt="" height="25" width="25" title="Royal_Challengers_Bangalore"></a>RCB</th>
+                <th>14</th>
+                <th>7</th>
+                <th>7</th>
+                <th>0</th>
+                <th bgcolor="red">14</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th><a href="https://en.wikipedia.org/wiki/Chennai_Super_Kings" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/368px-Chennai_Super_Kings_Logo.svg.png" alt="" height="25" width="25" title="Chennai_Super_Kings"></a>CSK</th>
+                <th>14</th>
+                <th>7</th>
+                <th>7</th>
+                <th>0</th>
+                <th bgcolor="red">14</th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <th><a href="https://en.wikipedia.org/wiki/Delhi_Capitals" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/360px-Delhi_Capitals.svg.png" height="25" width="25" title="Delhi_Capitals" alt=""></a>DC</th>
+                <th>14</th>
+                <th>7</th>
+                <th>7</th>
+                <th>0</th>
+                <th bgcolor="red">14</th>
+            </tr>
+            <tr>
+                <th>7</th>
+                <th><a href="https://en.wikipedia.org/wiki/Lucknow_Super_Giants" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/435px-Lucknow_Super_Giants_IPL_Logo.svg.png" height="25" width="25" title="Lucknow_Super_Giants" alt=""></a>LSG</th>
+                <th>14</th>
+                <th>7</th>
+                <th>7</th>
+                <th>0</th>
+                <th bgcolor="red">14</th>
+            </tr>
+            <tr>
+                <th>8</th>
+                <th><a href="https://en.wikipedia.org/wiki/Gujarat_Titans" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/375px-Gujarat_Titans_Logo.svg.png" height="25" width="25" title="Gujarat_Titans" alt=""></a>GT</th>
+                <th>14</th>
+                <th>5</th>
+                <th>7</th>
+                <th>2</th>
+                <th bgcolor="red">12</th>
+            </tr>
+            <tr>
+                <th>9</th>
+                <th><a href="https://en.wikipedia.org/wiki/Punjab_Kings" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/255px-Punjab_Kings_Logo.svg.png" height="25" width="25" title="Punjab_Kings" alt=""></a>PBKS</th>
+                <th>14</th>
+                <th>5</th>
+                <th>9</th>
+                <th>0</th>
+                <th bgcolor="red">10</th>
+            </tr>
+            <tr>
+                <th>10</th>
+                <th><a href="https://en.wikipedia.org/wiki/Mumbai_Indians" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/353px-Mumbai_Indians_Logo.svg.png" height="25" width="25" title="Mumbai_Indians" alt=""></a>MI</th>
+                <th>14</th>
+                <th>4</th>
+                <th>10</th>
+                <th>0</th>
+                <th bgcolor="red">8</th>
+            </tr>
+        </table></center>
+        <p><Strong>Note :</Strong>Click on logo's to know about team .</p>
+    </details>
+</body>
+</html>
